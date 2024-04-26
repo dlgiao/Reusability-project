@@ -17,7 +17,7 @@ public class Thrower {
      *
      * @param firstName  the first name of the thrower
      * @param lastName   the last name of the thrower
-     * @param athlete    the specialty of the thrower
+     * @param athlete    the athlete
      */
     public Thrower(String firstName, String lastName, Athlete athlete) {
         this.firstName = firstName;
