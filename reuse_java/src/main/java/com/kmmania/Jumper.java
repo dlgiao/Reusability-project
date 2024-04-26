@@ -1,27 +1,27 @@
 package com.kmmania;
 
 /**
- * The DistanceRunner class implements the {@link AthleteInterface} by composition and represents an athlete
- * specializing in distance running.
+ * The Jumper class implements the {@link AthleteInterface} by composition and represents an athlete
+ * specializing in jumping.
  *
  * @author Dac Linh Giao NGUYEN
  * @version 0.1
  * @see AthleteInterface
  * @see AthleteImpl
  */
-public class DistanceRunner {
+public class Jumper {
     private final String firstName;
     private final String lastName;
     private AthleteInterface athlete;
 
     /**
-     * Constructs a DistanceRunner object with the specified first name, last name, and specialty.
+     * Constructs a Jumper object with the specified first name, last name, and specialty.
      *
-     * @param firstName  the first name of the distance runner
-     * @param lastName   the last name of the distance runner
-     * @param speciality the specialty of the distance runner
+     * @param firstName  the first name of the jumper
+     * @param lastName   the last name of the jumper
+     * @param speciality the specialty of the jumper
      */
-    public DistanceRunner(String firstName, String lastName, String speciality) {
+    public Jumper(String firstName, String lastName, String speciality) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.athlete = new AthleteImpl(speciality);
@@ -40,7 +40,7 @@ public class DistanceRunner {
     }
 
     /**
-     * Displays the distance runner's information including name and specialty.
+     * Displays the jumper's information including name and specialty.
      */
     public void display() {
         System.out.printf("My name is %s %s. %s\n", firstName, lastName, athlete);
