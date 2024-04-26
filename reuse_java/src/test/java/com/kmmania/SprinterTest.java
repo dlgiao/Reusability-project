@@ -1,5 +1,6 @@
 package com.kmmania;
 
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;
@@ -8,7 +9,8 @@ import static org.mockito.Mockito.*;
 public class SprinterTest {
 
     @Test
-    void display_DisplaysCorrectInformation() {
+    @DisplayName("display() method should display correct information")
+    void displayShouldDisplayCorrectInformation() {
         // Given
         String firstName = "John";
         String lastName = "Doe";

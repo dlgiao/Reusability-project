@@ -1,5 +1,6 @@
 package com.kmmania;
 
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;
@@ -9,7 +10,8 @@ import static org.mockito.Mockito.when;
 public class AthleteTest {
 
     @Test
-    void mySpeciality_ReturnsCorrectSpeciality() {
+    @DisplayName("mySpeciality() method should return correct speciality")
+    void mySpecialityShouldReturnCorrectSpeciality() {
         // Given
         String speciality = "Running";
         Athlete athlete = new Athlete(speciality);
@@ -23,7 +25,8 @@ public class AthleteTest {
 
     // Additional test case to demonstrate Mockito usage if needed
     @Test
-    void mySpeciality_ReturnsCorrectSpeciality_MockitoExample() {
+    @DisplayName("mySpeciality() method should return correct speciality with Mockito")
+    void mySpecialityShouldReturnsCorrectSpecialityWithMockitoExample() {
         // Given
         String speciality = "Running";
         Athlete athlete = mock(Athlete.class);
