@@ -24,6 +24,14 @@ public class Sprinter extends Athlete {
         this.lastName = lastName;
     }
 
+    public String getFirstName() {
+        return firstName;
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
     /**
      * Displays the sprinter's information including name and specialty.
      */
