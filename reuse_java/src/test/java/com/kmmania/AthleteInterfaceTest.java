@@ -1,6 +1,7 @@
 package com.kmmania;
 
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.mockito.InjectMocks;
 
@@ -19,6 +20,7 @@ class AthleteInterfaceTest {
     }
 
     @Test
+    @DisplayName("mySpeciality() should return a speciality")
     void mySpecialityShouldReturnASpeciality() {
         // Given
         when(athleteInterfaceMock.mySpeciality()).thenReturn("Running");
@@ -31,6 +33,7 @@ class AthleteInterfaceTest {
     }
 
     @Test
+    @DisplayName("Direct instanciation should throw exception")
     void directInstantiationShouldThrowException() {
         // Assert that attempting to directly instantiate AthleteInterface throws an exception
         assertThrows(UnsupportedOperationException.class, () -> {
