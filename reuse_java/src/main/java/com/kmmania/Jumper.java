@@ -43,6 +43,10 @@ public class Jumper {
      * Displays the jumper's information including name and specialty.
      */
     public void display() {
-        System.out.printf("My name is %s %s. %s\n", firstName, lastName, athlete);
+        System.out.printf("My name is %s %s. %s\n",
+                this.firstName,
+                this.lastName,
+                this.athlete.mySpeciality()
+        );
     }
 }
