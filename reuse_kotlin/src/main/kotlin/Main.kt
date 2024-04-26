@@ -7,6 +7,9 @@ fun main() {
     val ryan = Thrower("Ryan", "Crouser", Athlete("shot put"))
     ryan.display()
 
-    val Eliud = DistanceRunner("Eliud", "Kipchoge", AthleteImpl("marathon"))
-    Eliud.display()
+    val eliud = DistanceRunner("Eliud", "Kipchoge", AthleteImpl("marathon"))
+    eliud.display()
+
+    val marco = Jumper("Marco", "Tamberi", AthleteImpl("high jump"))
+    marco.display()
 }
