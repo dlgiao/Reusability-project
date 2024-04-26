@@ -1,8 +1,8 @@
 package com.kmmania
 
 class Thrower(
-    private val firstName: String,
-    private val lastName: String,
+    val firstName: String,
+    val lastName: String,
     speciality: String
 ) {
     private val athlete = Athlete(speciality)
