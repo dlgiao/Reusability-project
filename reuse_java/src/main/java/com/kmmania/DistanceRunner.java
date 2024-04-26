@@ -11,7 +11,7 @@ package com.kmmania;
 public class DistanceRunner {
     private final String firstName;
     private final String lastName;
-    private final AthleteInterface athlete;
+    private AthleteInterface athlete;
 
     /**
      * Constructs a DistanceRunner object with the specified first name, last name, and specialty.
@@ -24,6 +24,18 @@ public class DistanceRunner {
         this.firstName = firstName;
         this.lastName = lastName;
         this.athlete = new AthleteImpl(speciality);
+    }
+
+    public String getFirstName() {
+        return firstName;
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    public void setAthlete(AthleteInterface athlete) {
+        this.athlete = athlete;
     }
 
     /**
