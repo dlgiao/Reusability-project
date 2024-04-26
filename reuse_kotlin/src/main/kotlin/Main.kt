@@ -1,5 +1,6 @@
 package com.kmmania
 
 fun main() {
-    println("Hello World!")
+    val usain = Sprinter("Usain", "Bolt", "sprinting")
+    usain.display()
 }
