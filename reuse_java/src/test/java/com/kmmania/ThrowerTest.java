@@ -15,10 +15,9 @@ public class ThrowerTest {
         String firstName = "Ryan";
         String lastName = "Crouser";
         String speciality = "shot put";
-        Athlete mockAthlete = mock(Athlete.class);
-        when(mockAthlete.mySpeciality()).thenReturn("My speciality is " + speciality + ".");
-        Thrower thrower = new Thrower(firstName, lastName, speciality);
-        thrower.setAthlete(mockAthlete);
+        Athlete athleteMock = mock(Athlete.class);
+        when(athleteMock.mySpeciality()).thenReturn("My speciality is " + speciality + ".");
+        Thrower thrower = new Thrower(firstName, lastName, athleteMock);
 
         // When
         thrower.display();
@@ -26,6 +25,6 @@ public class ThrowerTest {
         // Then
         assertThat(thrower.getFirstName()).isEqualTo(firstName);
         assertThat(thrower.getLastName()).isEqualTo(lastName);
-        verify(mockAthlete).mySpeciality();
+        verify(athleteMock).mySpeciality();
     }
 }
