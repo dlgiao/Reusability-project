@@ -1,8 +1,8 @@
 package com.kmmania
 
 class Sprinter(
-    private val firstName: String,
-    private val lastName: String,
+    val firstName: String,
+    val lastName: String,
     speciality: String
 ) : Athlete(speciality) {
     fun display() {
