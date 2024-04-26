@@ -13,6 +13,6 @@ class AthleteTest {
         val result = athlete.mySpeciality()
 
         // Then
-        assertThat(result).isEqualTo("My speciality is $speciality.")
+        assertThat(result).isEqualTo("My speciality is Running.")
     }
 }

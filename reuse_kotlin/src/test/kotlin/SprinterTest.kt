@@ -14,7 +14,7 @@ class SprinterTest {
 
         // Stub the mySpeciality method directly on the sprinter object
         val spySprinter = spy(sprinter)
-        doReturn("My speciality is $speciality.").`when`(spySprinter).mySpeciality()
+        doReturn("My speciality is sprinting.").`when`(spySprinter).mySpeciality()
 
         // When
         spySprinter.display()
