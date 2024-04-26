@@ -16,8 +16,7 @@ public class DistanceRunnerTest {
         String speciality = "marathon";
         AthleteInterface athleteMock = mock(AthleteInterface.class);
         when(athleteMock.mySpeciality()).thenReturn("My speciality is " + speciality + ".");
-        DistanceRunner distanceRunner = new DistanceRunner(firstName, lastName, speciality);
-        distanceRunner.setAthlete(athleteMock);
+        DistanceRunner distanceRunner = new DistanceRunner(firstName, lastName, athleteMock);
 
         // When
         distanceRunner.display();
@@ -25,6 +24,6 @@ public class DistanceRunnerTest {
         // Then
         assertThat(distanceRunner.getFirstName()).isEqualTo(firstName);
         assertThat(distanceRunner.getLastName()).isEqualTo(lastName);
-        // verify(athleteMock).mySpeciality();
+        verify(athleteMock).mySpeciality();
     }
 }

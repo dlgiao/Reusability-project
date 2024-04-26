@@ -20,7 +20,7 @@ public class Main {
         Thrower ryan = new Thrower("Ryan", "Crouser", new Athlete("shot put"));
         ryan.display();
 
-        DistanceRunner eliud = new DistanceRunner("Eliud", "Kipchoge", "marathoner");
+        DistanceRunner eliud = new DistanceRunner("Eliud", "Kipchoge", new AthleteImpl("marathon"));
         eliud.display();
 
         Jumper marco = new Jumper("Marco", "Tamberi", "high jump");

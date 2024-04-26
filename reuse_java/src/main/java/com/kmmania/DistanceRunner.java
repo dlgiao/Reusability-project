@@ -17,14 +17,14 @@ public class DistanceRunner {
     /**
      * Constructs a DistanceRunner object with the specified first name, last name, and specialty.
      *
-     * @param firstName  the first name of the distance runner
-     * @param lastName   the last name of the distance runner
-     * @param speciality the specialty of the distance runner
+     * @param firstName the first name of the distance runner
+     * @param lastName  the last name of the distance runner
+     * @param athlete   the athlete
      */
-    public DistanceRunner(String firstName, String lastName, String speciality) {
+    public DistanceRunner(String firstName, String lastName, AthleteInterface athlete) {
         this.firstName = firstName;
         this.lastName = lastName;
-        this.athlete = new AthleteImpl(speciality);
+        this.athlete = athlete;
     }
 
     public String getFirstName() {
