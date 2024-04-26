@@ -4,6 +4,6 @@ fun main() {
     val usain = Sprinter("Usain", "Bolt", "sprinting")
     usain.display()
 
-    val ryan = Thrower("Ryan", "Crouser", "shot put")
+    val ryan = Thrower("Ryan", "Crouser", Athlete("shot put"))
     ryan.display()
 }

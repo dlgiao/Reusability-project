@@ -13,8 +13,7 @@ class ThrowerTest {
         val speciality = "shot put"
         val athleteMock = mock(Athlete::class.java)
         `when`(athleteMock.mySpeciality()).thenReturn("My speciality is $speciality.")
-        val thrower = Thrower(firstName, lastName, speciality)
-        // TODO
+        val thrower = Thrower(firstName, lastName, athleteMock)
 
         // When
         thrower.display()
@@ -22,6 +21,6 @@ class ThrowerTest {
         // Then
         assertThat(thrower.firstName).isEqualTo(firstName)
         assertThat(thrower.lastName).isEqualTo(lastName)
-        // verify(athleteMock).mySpeciality()
+        verify(athleteMock).mySpeciality()
     }
 }
