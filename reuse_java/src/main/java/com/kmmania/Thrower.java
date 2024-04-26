@@ -10,7 +10,7 @@ package com.kmmania;
 public class Thrower {
     private final String firstName;
     private final String lastName;
-    private final Athlete athlete;
+    private Athlete athlete;
 
     /**
      * Constructs a Thrower object with the specified first name, last name, and specialty.
@@ -23,6 +23,18 @@ public class Thrower {
         this.firstName = firstName;
         this.lastName = lastName;
         this.athlete = new Athlete(speciality);
+    }
+
+    public String getFirstName() {
+        return firstName;
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    public void setAthlete(Athlete athlete) {
+        this.athlete = athlete;
     }
 
     /**
