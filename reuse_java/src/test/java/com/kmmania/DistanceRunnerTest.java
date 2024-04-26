@@ -1,5 +1,6 @@
 package com.kmmania;
 
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import static org.assertj.core.api.Assertions.*;
 import static org.mockito.Mockito.*;
@@ -7,11 +8,12 @@ import static org.mockito.Mockito.*;
 public class DistanceRunnerTest {
 
     @Test
-    void display_DisplaysCorrectInformation() {
+    @DisplayName("display() method should display correct information")
+    void displayShouldDisplaysCorrectInformation() {
         // Given
-        String firstName = "Alice";
-        String lastName = "Smith";
-        String speciality = "Distance";
+        String firstName = "Eliud";
+        String lastName = "Kipchoge";
+        String speciality = "marathon";
         AthleteInterface athleteMock = mock(AthleteInterface.class);
         when(athleteMock.mySpeciality()).thenReturn("My speciality is " + speciality + ".");
         DistanceRunner distanceRunner = new DistanceRunner(firstName, lastName, speciality);
