@@ -1,8 +1,8 @@
 package com.kmmania
 
 class Jumper(
-    private val firstName: String,
-    private val lastName: String,
+    val firstName: String,
+    val lastName: String,
     private val athlete: AthleteInterface
 ) {
     fun display() {

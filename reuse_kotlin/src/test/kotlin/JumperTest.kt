@@ -1,27 +1,27 @@
 import com.kmmania.AthleteInterface
-import com.kmmania.DistanceRunner
+import com.kmmania.Jumper
 import org.assertj.core.api.Assertions.assertThat
 import org.junit.jupiter.api.Test
 import org.mockito.Mockito.*
 
-class DistanceRunnerTest {
+class JumperTest {
 
     @Test
     fun `display() method should display correct information`() {
         // Given
-        val firstName = "Eliud"
-        val lastName = "Kipchoge"
-        val speciality = "marathon"
+        val firstName = "Marco"
+        val lastName = "Tamberi"
+        val speciality = "high jump"
         val athleteMock = mock(AthleteInterface::class.java)
         `when`(athleteMock.mySpeciality()).thenReturn("My speciality is $speciality.")
-        val distanceRunner = DistanceRunner(firstName, lastName, athleteMock)
+        val jumper = Jumper(firstName, lastName, athleteMock)
 
         // When
-        distanceRunner.display()
+        jumper.display()
 
         // Then
-        assertThat(distanceRunner.firstName).isEqualTo(firstName)
-        assertThat(distanceRunner.lastName).isEqualTo(lastName)
+        assertThat(jumper.firstName).isEqualTo(firstName)
+        assertThat(jumper.lastName).isEqualTo(lastName)
         verify(athleteMock).mySpeciality()
     }
 }
