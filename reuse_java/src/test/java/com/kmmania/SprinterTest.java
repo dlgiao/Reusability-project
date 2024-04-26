@@ -2,8 +2,8 @@ package com.kmmania;
 
 import org.junit.jupiter.api.Test;
 
-import static org.mockito.Mockito.mock;
-import static org.mockito.Mockito.when;
+import static org.assertj.core.api.Assertions.assertThat;
+import static org.mockito.Mockito.*;
 
 public class SprinterTest {
 
@@ -15,28 +15,16 @@ public class SprinterTest {
         String speciality = "Sprinting";
         Sprinter sprinter = new Sprinter(firstName, lastName, speciality);
 
-        // When
-        sprinter.display();
-
-        // Then
-        // Verify output to console, not easily testable with JUnit alone
-        // We can add logging and capture system output for more comprehensive testing
-    }
-
-    // Additional test case to demonstrate Mockito usage if needed
-    @Test
-    void display_DisplaysCorrectInformation_MockitoExample() {
-        // Given
-        String firstName = "John";
-        String lastName = "Doe";
-        String speciality = "Sprinting";
-        Sprinter sprinter = mock(Sprinter.class);
-        when(sprinter.mySpeciality()).thenReturn("My speciality is " + speciality + ".");
+        // Stub the mySpeciality method directly on the sprinter object
+        Sprinter spySprinter = spy(sprinter);
+        doReturn("My speciality is " + speciality + ".").when(spySprinter).mySpeciality();
 
         // When
-        sprinter.display();
+        spySprinter.display();
 
         // Then
-        // Verify output to console, not easily testable with JUnit alone
+        assertThat(spySprinter.getFirstName()).isEqualTo(firstName);
+        assertThat(spySprinter.getLastName()).isEqualTo(lastName);
+        verify(spySprinter).mySpeciality(); // Verify that mySpeciality method is invoked
     }
 }
