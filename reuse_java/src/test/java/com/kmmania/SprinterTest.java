@@ -12,9 +12,9 @@ public class SprinterTest {
     @DisplayName("display() method should display correct information")
     void displayShouldDisplayCorrectInformation() {
         // Given
-        String firstName = "John";
-        String lastName = "Doe";
-        String speciality = "Sprinting";
+        String firstName = "Usain";
+        String lastName = "Bolt";
+        String speciality = "sprinting";
         Sprinter sprinter = new Sprinter(firstName, lastName, speciality);
 
         // Stub the mySpeciality method directly on the sprinter object
