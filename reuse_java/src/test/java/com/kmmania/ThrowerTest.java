@@ -12,9 +12,9 @@ public class ThrowerTest {
     @DisplayName("display() method should display correct information")
     void displayShouldDisplayCorrectInformation() {
         // Given
-        String firstName = "Alice";
-        String lastName = "Smith";
-        String speciality = "Throwing";
+        String firstName = "Ryan";
+        String lastName = "Crouser";
+        String speciality = "shot put";
         Athlete mockAthlete = mock(Athlete.class);
         when(mockAthlete.mySpeciality()).thenReturn("My speciality is " + speciality + ".");
         Thrower thrower = new Thrower(firstName, lastName, speciality);
