@@ -17,14 +17,14 @@ public class Jumper {
     /**
      * Constructs a Jumper object with the specified first name, last name, and specialty.
      *
-     * @param firstName  the first name of the jumper
-     * @param lastName   the last name of the jumper
-     * @param speciality the specialty of the jumper
+     * @param firstName the first name of the jumper
+     * @param lastName  the last name of the jumper
+     * @param athlete   the athlete
      */
-    public Jumper(String firstName, String lastName, String speciality) {
+    public Jumper(String firstName, String lastName, AthleteInterface athlete) {
         this.firstName = firstName;
         this.lastName = lastName;
-        this.athlete = new AthleteImpl(speciality);
+        this.athlete = athlete;
     }
 
     public String getFirstName() {

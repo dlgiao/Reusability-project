@@ -23,7 +23,7 @@ public class Main {
         DistanceRunner eliud = new DistanceRunner("Eliud", "Kipchoge", new AthleteImpl("marathon"));
         eliud.display();
 
-        Jumper marco = new Jumper("Marco", "Tamberi", "high jump");
+        Jumper marco = new Jumper("Marco", "Tamberi", new AthleteImpl("high jump"));
         marco.display();
     }
 }
