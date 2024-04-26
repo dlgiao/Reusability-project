@@ -12,7 +12,7 @@ class ThrowerTest {
         val lastName = "Crouser"
         val speciality = "shot put"
         val athleteMock = mock(Athlete::class.java)
-        `when`(athleteMock.mySpeciality()).thenReturn("My speciality is shot put.")
+        `when`(athleteMock.mySpeciality()).thenReturn("My speciality is $speciality.")
         val thrower = Thrower(firstName, lastName, athleteMock)
 
         // When
