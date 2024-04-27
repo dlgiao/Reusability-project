@@ -9,7 +9,7 @@
 package com.kmmania
 
 /**
- * Class representing a thrower, utilizing composition with the Athlete class.
+ * Class representing a thrower, utilizing composition with the [Athlete] class.
  *
  * @property firstName The first name of the thrower.
  * @property lastName The last name of the thrower.
@@ -20,6 +20,7 @@ package com.kmmania
  * @param athlete An instance of the Athlete class representing the thrower's specialization.
  * @author Dac Linh Giao NGUYEN
  * @since 0.1
+ * @see Athlete
  */
 class Thrower(
     val firstName: String,
