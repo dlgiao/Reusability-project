@@ -12,6 +12,8 @@ package com.kmmania
  * Implementation of the AthleteInterface representing an athlete.
  *
  * @property speciality The specialty of the athlete.
+ * @constructor Creates an AthleteImpl with the specified speciality.
+ * @param speciality The specialty of the athlete.
  * @author Dac Linh Giao NGUYEN
  * @since 0.1
  */

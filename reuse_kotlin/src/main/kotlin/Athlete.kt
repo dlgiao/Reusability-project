@@ -12,6 +12,8 @@ package com.kmmania
  * Base class representing an athlete.
  *
  * @property speciality The specialty of the athlete.
+ * @constructor Creates an Athlete with the specified specialty.
+ * @param speciality The specialty of the athlete.
  * @author Dac Linh Giao NGUYEN
  * @since 0.1
  */

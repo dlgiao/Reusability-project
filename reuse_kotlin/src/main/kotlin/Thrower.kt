@@ -14,6 +14,10 @@ package com.kmmania
  * @property firstName The first name of the thrower.
  * @property lastName The last name of the thrower.
  * @property athlete An instance of the Athlete class representing the thrower's specialization.
+ * @constructor Creates a Thrower with the specified first name, last name, and athlete instance.
+ * @param firstName The first name of the thrower.
+ * @param lastName The last name of the thrower.
+ * @param athlete An instance of the Athlete class representing the thrower's specialization.
  * @author Dac Linh Giao NGUYEN
  * @since 0.1
  */
