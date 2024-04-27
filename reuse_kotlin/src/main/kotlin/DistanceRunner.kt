@@ -1,3 +1,11 @@
+/*
+ * Classes reusability project.
+ * Dac Linh Giao NGUYEN
+ * License MIT
+ *
+ * Classes reusability in Kotlin.
+ * DistanceRunner.kt
+ */
 package com.kmmania
 
 /**
