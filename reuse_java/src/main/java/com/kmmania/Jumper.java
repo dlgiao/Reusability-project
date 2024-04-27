@@ -12,7 +12,7 @@ package com.kmmania;
 public class Jumper {
     private final String firstName;
     private final String lastName;
-    private AthleteInterface athlete;
+    private final AthleteInterface athlete;
 
     /**
      * Constructs a Jumper object with the specified first name, last name, and specialty.

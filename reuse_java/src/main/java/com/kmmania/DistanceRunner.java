@@ -12,7 +12,7 @@ package com.kmmania;
 public class DistanceRunner {
     private final String firstName;
     private final String lastName;
-    private AthleteInterface athlete;
+    private final AthleteInterface athlete;
 
     /**
      * Constructs a DistanceRunner object with the specified first name, last name, and specialty.
