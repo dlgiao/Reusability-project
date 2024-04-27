@@ -1,15 +1,38 @@
 package com.kmmania
 
+/**
+ * A sample client class demonstrating different implementations of athletes.
+ */
 fun main() {
-    val usain = Sprinter("Usain", "Bolt", "sprinting")
+    // Creating a sprinter instance
+    val usain = Sprinter(
+        "Usain",
+        "Bolt",
+        "sprinting"
+    )
     usain.display()
 
-    val ryan = Thrower("Ryan", "Crouser", Athlete("shot put"))
+    // Creating a thrower instance
+    val ryan = Thrower(
+        "Ryan",
+        "Crouser",
+        Athlete("shot put")
+    )
     ryan.display()
 
-    val eliud = DistanceRunner("Eliud", "Kipchoge", AthleteImpl("marathon"))
+    // Creating a distance runner instance
+    val eliud = DistanceRunner(
+        "Eliud",
+        "Kipchoge",
+        AthleteImpl("marathon")
+    )
     eliud.display()
 
-    val marco = Jumper("Marco", "Tamberi", AthleteImpl("high jump"))
+    // Creating a jumper instance
+    val marco = Jumper(
+        "Marco",
+        "Tamberi",
+        AthleteImpl("high jump")
+    )
     marco.display()
 }
