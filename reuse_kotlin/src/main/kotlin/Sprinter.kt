@@ -14,6 +14,8 @@ package com.kmmania
  * @property firstName The first name of the sprinter.
  * @property lastName The last name of the sprinter.
  * @property speciality The speciality of the sprinter, inherited from the Athlete class.
+ * @author Dac Linh Giao NGUYEN
+ * @since 0.1
  */
 class Sprinter(
     val firstName: String,

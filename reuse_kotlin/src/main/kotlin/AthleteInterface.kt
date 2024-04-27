@@ -10,6 +10,9 @@ package com.kmmania
 
 /**
  * Interface representing an athlete.
+ *
+ * @author Dac Linh Giao NGUYEN
+ * @since 0.1
  */
 interface AthleteInterface {
 

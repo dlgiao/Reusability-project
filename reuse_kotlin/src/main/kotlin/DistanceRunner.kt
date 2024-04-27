@@ -14,6 +14,8 @@ package com.kmmania
  * @property firstName The first name of the distance runner.
  * @property lastName The last name of the distance runner.
  * @property athlete An instance of the AthleteInterface representing the distance runner.
+ * @author Dac Linh Giao NGUYEN
+ * @since 0.1
  */
 class DistanceRunner(
     val firstName: String,

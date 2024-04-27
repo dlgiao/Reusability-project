@@ -10,6 +10,9 @@ package com.kmmania
 
 /**
  * A sample client class demonstrating different implementations of athletes.
+ *
+ * @author Dac Linh Giao NGUYEN
+ * @since 0.1
  */
 fun main() {
     // Creating a sprinter instance

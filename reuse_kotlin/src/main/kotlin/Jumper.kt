@@ -14,6 +14,8 @@ package com.kmmania
  * @property firstName The first name of the jumper.
  * @property lastName The last name of the jumper.
  * @property athlete An instance of the AthleteInterface representing the jumper.
+ * @author Dac Linh Giao NGUYEN
+ * @since 0.1
  */
 class Jumper(
     val firstName: String,
