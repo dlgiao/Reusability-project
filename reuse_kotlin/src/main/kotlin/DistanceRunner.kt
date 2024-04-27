@@ -13,7 +13,7 @@ package com.kmmania
  *
  * @property firstName The first name of the distance runner.
  * @property lastName The last name of the distance runner.
- * @property athlete An instance of the [AthleteInterface] representing the distance runner.
+ * @property athlete An instance of the {@link AthleteInterface} representing the distance runner.
  * @constructor Creates a DistanceRunner with the specified first name, last name, and athlete instance.
  * @author Dac Linh Giao NGUYEN
  * @since 0.1

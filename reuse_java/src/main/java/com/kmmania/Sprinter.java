@@ -1,7 +1,7 @@
 package com.kmmania;
 
 /**
- * The Sprinter class extends the {@link Athlete} class and represents a sprinter athlete.
+ * Class representing a sprinter, inheriting from the {@link Athlete} class.
  *
  * @author Dac Linh Giao NGUYEN
  * @version 0.1

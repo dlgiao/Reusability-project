@@ -19,7 +19,7 @@ public class Jumper {
      *
      * @param firstName the first name of the jumper
      * @param lastName  the last name of the jumper
-     * @param athlete   the athlete
+     * @param athlete   An instance of the {@link AthleteInterface} representing the distance runner.
      */
     public Jumper(String firstName, String lastName, AthleteInterface athlete) {
         this.firstName = firstName;
@@ -33,10 +33,6 @@ public class Jumper {
 
     public String getLastName() {
         return lastName;
-    }
-
-    public void setAthlete(AthleteInterface athlete) {
-        this.athlete = athlete;
     }
 
     /**

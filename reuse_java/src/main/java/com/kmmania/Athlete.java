@@ -1,7 +1,7 @@
 package com.kmmania;
 
 /**
- * The Athlete class defines a profile for an athlete.
+ * Base class representing an athlete.
  *
  * @author Dac Linh Giao NGUYEN
  * @version 0.1
