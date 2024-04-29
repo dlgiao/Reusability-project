@@ -27,3 +27,17 @@ func (d *DistanceRunner) Display() {
 		d.Athlete.MySpeciality(),
 	)
 }
+
+type Jumper struct {
+	Firstname string
+	Lastname  string
+	Athlete   AthleteInterface
+}
+
+func (j *Jumper) Display() {
+	fmt.Printf("My name is %s %s. %v\n",
+		j.Firstname,
+		j.Lastname,
+		j.Athlete.MySpeciality(),
+	)
+}
