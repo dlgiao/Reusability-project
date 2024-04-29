@@ -1,4 +1,4 @@
-package reuse_go
+package main
 
 import "fmt"
 
