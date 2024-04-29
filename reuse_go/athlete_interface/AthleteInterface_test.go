@@ -35,6 +35,23 @@ func TestDistanceRunner_Display(t *testing.T) {
 	}
 }
 
+func TestJumper_Display(t *testing.T) {
+	jumper := Jumper{
+		Firstname: "Marco",
+		Lastname:  "Tamberi",
+		Athlete:   BaseAthlete{Speciality: "high jump"},
+	}
+
+	expected := "My name is Marco Tamberi. My speciality is high jump.\n"
+	output := captureOutput(func() {
+		jumper.Display()
+	})
+
+	if output != expected {
+		t.Errorf("Expected output %s, but got %s", expected, output)
+	}
+}
+
 // captureOutput captures the output of a function and returns it as a string.
 func captureOutput(f func()) string {
 	old := os.Stdout // keep backup of the real stdout
