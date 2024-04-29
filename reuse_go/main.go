@@ -28,4 +28,11 @@ func main() {
 		Athlete:   athlete_interface.BaseAthlete{Speciality: "marathon"},
 	}
 	eliud.Display()
+
+	marco := athlete_interface.Jumper{
+		Firstname: "Marco",
+		Lastname:  "Tamberi",
+		Athlete:   athlete_interface.BaseAthlete{Speciality: "high jump"},
+	}
+	marco.Display()
 }
