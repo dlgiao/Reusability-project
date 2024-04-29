@@ -5,7 +5,10 @@ import (
 	"kmmania.com/reuse_go/athlete_interface"
 )
 
+// main is the entry point of the program.
+// A sample client demonstrating different implementations of athletes.
 func main() {
+	// Creating a sprinter instance
 	usain := athlete.Sprinter{
 		Firstname: "Usain",
 		Lastname:  "Bolt",
@@ -13,6 +16,7 @@ func main() {
 	}
 	usain.Display()
 
+	// Creating a thrower instance
 	ryan := athlete.Thrower{
 		Firstname: "Ryan",
 		Lastname:  "Crouser",
@@ -22,6 +26,7 @@ func main() {
 	}
 	ryan.Display()
 
+	// Creating a distance runner instance
 	eliud := athlete_interface.DistanceRunner{
 		Firstname: "Eliud",
 		Lastname:  "Kipchoge",
@@ -29,6 +34,7 @@ func main() {
 	}
 	eliud.Display()
 
+	// Creating a jumper instance
 	marco := athlete_interface.Jumper{
 		Firstname: "Marco",
 		Lastname:  "Tamberi",
