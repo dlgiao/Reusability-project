@@ -23,3 +23,17 @@ func (s *Sprinter) Display() {
 		s.Athlete.MySpeciality(),
 	)
 }
+
+type Thrower struct {
+	FirstName string
+	LastName  string
+	Athlete   Athlete
+}
+
+func (t *Thrower) Display() {
+	fmt.Printf("My name is %s %s. %v\n",
+		t.FirstName,
+		t.LastName,
+		t.Athlete.MySpeciality(),
+	)
+}
