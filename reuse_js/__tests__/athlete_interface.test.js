@@ -1,5 +1,3 @@
-const AthleteInterface = require("../src/athlete_interface");
-
 describe("AthleteInterface", () => {
     describe("mySpeciality", () => {
         it("should be implemented by subclasses", () => {
