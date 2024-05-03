@@ -1,4 +1,4 @@
-import Athlete from "./athlete";
+const Athlete = require( "./athlete" );
 
 /**
  * Represents a sprinter.

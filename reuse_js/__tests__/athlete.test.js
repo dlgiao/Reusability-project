@@ -12,4 +12,4 @@ describe('Athlete', () => {
         const athlete = new Athlete("running");
         expect(athlete.mySpeciality()).toBe("My speciality is running.");
     });
-})
+});
