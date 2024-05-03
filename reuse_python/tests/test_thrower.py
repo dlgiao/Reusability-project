@@ -1,7 +1,4 @@
 from unittest import mock
-from unittest.mock import MagicMock
-
-import pytest
 
 from src.thrower import Thrower
 
