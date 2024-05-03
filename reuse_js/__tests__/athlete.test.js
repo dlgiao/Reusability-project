@@ -8,7 +8,7 @@ describe('Athlete', () => {
     });
 
     // Test mySpeciality method
-    test("mySpeciality should return correct string", () => {
+    test("mySpeciality() should return correct string", () => {
         const athlete = new Athlete("running");
         expect(athlete.mySpeciality()).toBe("My speciality is running.");
     });
