@@ -16,11 +16,16 @@ describe("Distance Runner", () => {
         distanceRunner = new DistanceRunner("Eliud", "Kipchoge", mockAthlete);
     });
 
-    // Test constructor
-    it("should set the firstName, lastName and athlete correctly", () => {
-        expect(distanceRunner.firstName).toBe("Eliud");
-        expect(distanceRunner.lastName).toBe("Kipchoge");
-        expect(distanceRunner.athlete).toBe(mockAthlete);
+    describe("constructor", () => {
+        it("should create an instance of DistanceRunner", () => {
+            expect(distanceRunner).toBeInstanceOf(DistanceRunner);
+        })
+
+        it("should set the firstName, lastName and athlete correctly", () => {
+            expect(distanceRunner.firstName).toBe("Eliud");
+            expect(distanceRunner.lastName).toBe("Kipchoge");
+            expect(distanceRunner.athlete).toBe(mockAthlete);
+        });
     });
 
     // Test display method
