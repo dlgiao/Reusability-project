@@ -17,4 +17,11 @@ describe("Thrower", () => {
         expect(thrower.lastName).toBe("Crouser");
         expect(thrower.athlete).toBe(mockAthlete);
     });
+
+    // Test display method
+    test("display() should return correct information", () => {
+        const consoleSpy = jest.spyOn(console, "log");
+        thrower.display();
+        expect(consoleSpy).toHaveBeenCalledWith("My name is Ryan Crouser. My speciality is shot put");
+    });
 })
