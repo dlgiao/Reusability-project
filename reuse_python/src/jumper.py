@@ -26,17 +26,17 @@ Date: 2024
 """
 
 
-class DistanceRunner:
-    """Class representing a distance runner."""
+class Jumper:
+    """Class representing a jumper."""
 
     def __init__(self, first_name, last_name, athlete):
         """
-        Initializes a DistanceRunner object with a given first name, last name, and athlete instance.
+        Initializes a Jumper object with a given first name, last name, and athlete instance.
 
         Args:
-            first_name (str): The first name of the distance runner.
-            last_name (str): The last name of the distance runner.
-            athlete (AthleteBase): An Athlete object representing the distance runner's specialty.
+            first_name (str): The first name of the jumper.
+            last_name (str): The last name of the jumper.
+            athlete (AthleteBase): An Athlete object representing the jumper's specialty.
         """
         self.first_name = first_name
         self.last_name = last_name
@@ -44,7 +44,7 @@ class DistanceRunner:
 
     def display(self):
         """
-        Displays information about the distance runner.
+        Displays information about the jumper.
 
         Returns:
             None
