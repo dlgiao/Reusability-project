@@ -36,7 +36,7 @@ class Thrower:
         athlete (Athlete): An Athlete object representing the thrower's specialty.
 
     Methods:
-        display(): Displays information about the thrower, including their name and specialty.
+        display(): Displays information about the thrower, including their full name and specialty.
     """
 
     def __init__(self, first_name, last_name, athlete):
