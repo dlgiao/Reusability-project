@@ -24,7 +24,7 @@ Author: Dac Linh Giao NGUYEN
 Date: 2024
 
 """
-from Athlete import Athlete
+from athlete import Athlete
 
 
 class Sprinter(Athlete):
