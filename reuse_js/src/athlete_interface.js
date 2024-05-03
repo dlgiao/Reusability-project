@@ -1,5 +1,5 @@
 /**
- * Represents an interface for Athlete.
+ * Interface representing an athlete.
  *
  * @interface
  * @author Dac Linh Giao NGUYEN

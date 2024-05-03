@@ -1,5 +1,5 @@
 /**
- * Represents an athlete.
+ * Base class representing an athlete.
  *
  * @author Dac Linh Giao NGUYEN
  * @version 0.1

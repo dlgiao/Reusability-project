@@ -1,5 +1,5 @@
 /**
- * Represents a distance runner athlete using composition.
+ * Class representing a distance runner utilizing composition with the AthleteInterface.
  *
  * @author Dac Linh Giao NGUYEN
  * @version 0.1
@@ -11,7 +11,7 @@ class DistanceRunner {
      *
      * @param {string} firstName - The first name of the distance runner.
      * @param {string} lastName - The last name of the distance runner.
-     * @param {AthleteBase} athlete - The speciality of the distance runner.
+     * @param {AthleteBase} athlete - An instance of the AthleteBase representing the distance runner.
      */
     constructor(firstName, lastName, athlete) {
         this.firstName = firstName;

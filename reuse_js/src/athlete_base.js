@@ -1,5 +1,5 @@
 /**
- * Represents an implementation of AthleteInterface.
+ * Implementation of the AthleteInterface representing an athlete.
  *
  * @author Dac Linh Giao NGUYEN
  * @version 0.1

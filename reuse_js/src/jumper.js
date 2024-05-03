@@ -1,5 +1,5 @@
 /**
- * Represents a jumper athlete using composition.
+ * Class representing a jumper utilizing composition with the AthleteInterface.
  *
  * @author Dac Linh Giao NGUYEN
  * @version 0.1
@@ -11,7 +11,7 @@ class Jumper {
      *
      * @param {string} firstName - The first name of the jumper.
      * @param {string} lastName - The last name of the jumper.
-     * @param {AthleteBase} athlete - The speciality of the jumper.
+     * @param {AthleteBase} athlete - An instance of the AthleteBase representing the jumper.
      */
     constructor(firstName, lastName, athlete) {
         this.firstName = firstName;

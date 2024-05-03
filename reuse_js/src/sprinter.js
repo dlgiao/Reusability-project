@@ -1,7 +1,7 @@
-const Athlete = require( "./athlete" );
+const Athlete = require("./athlete");
 
 /**
- * Represents a sprinter.
+ * Class representing a sprinter, inheriting from the Athlete class.
  *
  * @extends Athlete
  * @author Dac Linh Giao NGUYEN
