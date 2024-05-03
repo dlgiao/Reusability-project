@@ -27,6 +27,6 @@ describe("Distance Runner", () => {
     it("should return correct information", () => {
         const consoleSpy = jest.spyOn(console, "log");
         distanceRunner.display();
-        expect(consoleSpy).toHaveBeenCalledWith("My name is Eliud Kipchoge. My speciality is marathon.");
+        expect(consoleSpy).toHaveBeenCalledWith("My name is Eliud Kipchoge. My speciality is marathon");
     });
 })
