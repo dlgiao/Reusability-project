@@ -8,8 +8,13 @@ const MockAthlete = jest.fn().mockImplementation((speciality) => {
 })
 
 describe("Thrower", () => {
-    const mockAthlete = new MockAthlete("shot put");
-    const thrower = new Thrower("Ryan", "Crouser", mockAthlete);
+    let mockAthlete;
+    let thrower;
+
+    beforeEach(() => {
+        mockAthlete = new MockAthlete("shot put");
+        thrower = new Thrower("Ryan", "Crouser", mockAthlete);
+    });
 
     // Test constructor
     test("constructor should set the firstName, lastName and athlete correctly", () => {

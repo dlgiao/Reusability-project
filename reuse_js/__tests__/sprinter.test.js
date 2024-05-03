@@ -1,7 +1,11 @@
 const Sprinter = require("../src/sprinter");
 
 describe("Sprinter", () => {
-    const sprinter = new Sprinter("Usain", "Bolt", "sprinting");
+    let sprinter;
+
+    beforeEach(() => {
+        sprinter = new Sprinter("Usain", "Bolt", "sprinting");
+    });
 
     // Test constructor
     test("constructor should set firstName, lastName ans speciality correctly", () => {

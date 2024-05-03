@@ -1,7 +1,11 @@
 const Athlete = require('../src/athlete');
 
 describe('Athlete', () => {
-    const athlete = new Athlete("running");
+    let athlete;
+
+    beforeEach(() => {
+        athlete = new Athlete("running");
+    });
 
     // Test constructor
     test("constructor should set the speciality correctly", () => {
