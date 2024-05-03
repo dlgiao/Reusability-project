@@ -27,3 +27,5 @@ class AthleteBase extends AthleteInterface {
         return `My speciality is ${this.speciality}.`;
     }
 }
+
+module.exports.AthleteBase = AthleteBase;
