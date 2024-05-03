@@ -3,7 +3,7 @@ const {Thrower} = require("../src/thrower");
 // Mock Athlete
 const MockAthlete = jest.fn().mockImplementation((speciality) => {
     return {
-        mySpeciality: jest.fn().mockReturnValue(`My speciality is ${speciality}`)
+        mySpeciality: jest.fn().mockReturnValue(`My speciality is ${speciality}.`)
     }
 });
 
@@ -33,7 +33,7 @@ describe("Thrower", () => {
     it("should return correct information", () => {
         const consoleSpy = jest.spyOn(console, "log");
         thrower.display();
-        expect(consoleSpy).toHaveBeenCalledWith("My name is Ryan Crouser. My speciality is shot put");
+        expect(consoleSpy).toHaveBeenCalledWith("My name is Ryan Crouser. My speciality is shot put.");
     });
 
     // Test if athlete is an instance of Athlete
