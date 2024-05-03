@@ -11,7 +11,7 @@ Classes:
     Sprinter: Represents a sprinter, inheriting from Athlete.
     Thrower: Represents a thrower, utilizing Athlete class through composition.
     AthleteInterface: Interface defining the method for athlete specialty.
-    AthleteImpl: Class implementing the AthleteInterface.
+    AthleteBase: Class implementing the AthleteInterface.
     DistanceRunner: Represents a distance runner, using Athlete interface through composition.
     Jumper: Represents a jumper, using Athlete interface through composition.
 
