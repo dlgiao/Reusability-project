@@ -1,12 +1,13 @@
 {
   "name": "reuse_js",
-  "version": "1.0.0",
-  "main": "index.js",
+  "version": "0.1.0",
+  "main": "src/index.js",
   "scripts": {
+    "start": "node src/index",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": ""
+  "author": "Dac Linh Giao NGUYEN",
+  "license": "MIT",
+  "description": "Classes reusability project in javascript"
 }
