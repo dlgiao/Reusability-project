@@ -23,7 +23,7 @@ class DistanceRunner {
      * Display distance runner's information including name and speciality.
      */
     display() {
-        console.log(`My name is ${this.firstName} ${this.lastName}. ${this.athlete.mySpeciality()}`);
+        console.log(`My name is ${this.firstName} ${this.lastName}. ${this.athlete.mySpeciality()}.`);
     }
 }
 

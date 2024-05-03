@@ -5,7 +5,7 @@ const MockAthlete = jest.fn().mockImplementation((speciality) => {
     return {
         mySpeciality: jest.fn().mockReturnValue(`My speciality is ${speciality}`)
     }
-})
+});
 
 describe("Thrower", () => {
     let mockAthlete;
