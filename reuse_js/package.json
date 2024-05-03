@@ -4,7 +4,7 @@
   "main": "src/index.js",
   "scripts": {
     "start": "node src/index",
-    "test": "npx test"
+    "test": "npx jest"
   },
   "keywords": [],
   "author": "Dac Linh Giao NGUYEN",
