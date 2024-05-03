@@ -17,10 +17,16 @@ describe("Thrower", () => {
     });
 
     // Test constructor
-    it("should set the firstName, lastName and athlete correctly", () => {
-        expect(thrower.firstName).toBe("Ryan");
-        expect(thrower.lastName).toBe("Crouser");
-        expect(thrower.athlete).toBe(mockAthlete);
+    describe("constructor", () => {
+        it("should create an instance of Thrower", () => {
+            expect(thrower).toBeInstanceOf(Thrower);
+        });
+
+        it("should set the firstName, lastName and athlete correctly", () => {
+            expect(thrower.firstName).toBe("Ryan");
+            expect(thrower.lastName).toBe("Crouser");
+            expect(thrower.athlete).toBe(mockAthlete);
+        });
     });
 
     // Test display method

@@ -16,6 +16,7 @@ describe("Distance Runner", () => {
         distanceRunner = new DistanceRunner("Eliud", "Kipchoge", mockAthlete);
     });
 
+    // Test constructor
     describe("constructor", () => {
         it("should create an instance of DistanceRunner", () => {
             expect(distanceRunner).toBeInstanceOf(DistanceRunner);

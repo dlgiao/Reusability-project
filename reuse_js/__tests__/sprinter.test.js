@@ -8,10 +8,16 @@ describe("Sprinter", () => {
     });
 
     // Test constructor
-    it("should set firstName, lastName ans speciality correctly", () => {
-        expect(sprinter.firstName).toBe("Usain");
-        expect(sprinter.lastName).toBe("Bolt");
-        expect(sprinter.speciality).toBe("sprinting");
+    describe("constructor", () => {
+        it("should create an instance of Sprinter", () => {
+            expect(sprinter).toBeInstanceOf(Sprinter);
+        });
+
+        it("should set firstName, lastName ans speciality correctly", () => {
+            expect(sprinter.firstName).toBe("Usain");
+            expect(sprinter.lastName).toBe("Bolt");
+            expect(sprinter.speciality).toBe("sprinting");
+        });
     });
 
     // Test display method

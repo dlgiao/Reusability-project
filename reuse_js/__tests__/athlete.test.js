@@ -8,9 +8,14 @@ describe('Athlete', () => {
     });
 
     // Test constructor
-    it("should set the speciality correctly", () => {
-        expect(athlete.speciality).toBe("running");
-    });
+    describe("constructor", () => {
+        it("should create an instance of Athlete", () => {
+            expect(athlete).toBeInstanceOf(Athlete);
+        });
+        it("should set the speciality correctly", () => {
+            expect(athlete.speciality).toBe("running");
+        });
+    })
 
     // Test mySpeciality method
     it("should return correct string", () => {
