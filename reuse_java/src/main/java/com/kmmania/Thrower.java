@@ -13,7 +13,7 @@ public class Thrower {
     private final Athlete athlete;
 
     /**
-     * Constructs a Thrower object with the specified first name, last name, and specialty.
+     * Constructs a Thrower object with the specified first name, last name, and athlete.
      *
      * @param firstName  the first name of the thrower
      * @param lastName   the last name of the thrower
