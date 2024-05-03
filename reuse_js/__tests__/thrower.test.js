@@ -1,5 +1,4 @@
 const {Thrower} = require("../src/thrower");
-const Athlete = require("../src/athlete");
 
 // Mock Athlete
 const MockAthlete = jest.fn().mockImplementation((speciality) => {
