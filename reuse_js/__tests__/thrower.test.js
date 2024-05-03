@@ -17,26 +17,26 @@ describe("Thrower", () => {
     });
 
     // Test constructor
-    test("constructor should set the firstName, lastName and athlete correctly", () => {
+    it("should set the firstName, lastName and athlete correctly", () => {
         expect(thrower.firstName).toBe("Ryan");
         expect(thrower.lastName).toBe("Crouser");
         expect(thrower.athlete).toBe(mockAthlete);
     });
 
     // Test display method
-    test("display() should return correct information", () => {
+    it("should return correct information", () => {
         const consoleSpy = jest.spyOn(console, "log");
         thrower.display();
         expect(consoleSpy).toHaveBeenCalledWith("My name is Ryan Crouser. My speciality is shot put");
     });
 
     // Test if athlete is an instance of Athlete
-    // test("athlete property should be an instance of Athlete", () => {
+    // it("should be an instance of Athlete", () => {
     //     expect(thrower.athlete).toBeInstanceOf(MockAthlete);
     // });
 
     // Test if athlete has mySpeciality method
-    test("athlete property should have mySpeciality method", () => {
+    it("should have mySpeciality method", () => {
         expect(typeof thrower.athlete.mySpeciality).toBe("function");
     });
 })

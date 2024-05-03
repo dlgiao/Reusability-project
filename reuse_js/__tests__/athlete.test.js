@@ -8,12 +8,12 @@ describe('Athlete', () => {
     });
 
     // Test constructor
-    test("constructor should set the speciality correctly", () => {
+    it("should set the speciality correctly", () => {
         expect(athlete.speciality).toBe("running");
     });
 
     // Test mySpeciality method
-    test("mySpeciality() should return correct string", () => {
+    it("should return correct string", () => {
         expect(athlete.mySpeciality()).toBe("My speciality is running.");
     });
 });
