@@ -1,6 +1,7 @@
 from src.athlete import Athlete
 from src.athlete_base import AthleteBase
 from src.distance_runner import DistanceRunner
+from src.jumper import Jumper
 from src.sprinter import Sprinter
 from src.thrower import Thrower
 
@@ -22,3 +23,8 @@ if __name__ == "__main__":
     eliud = DistanceRunner("Eliud", "Kipchoge", AthleteBase("marathon"))
     # Displaying information about the DistanceRunner
     eliud.display()
+
+    # Creating a Jumper instance
+    marco = Jumper("Marco", "Tamberi", AthleteBase("high jump"))
+    # Displaying information about the Jumper
+    marco.display()
