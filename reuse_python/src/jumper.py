@@ -1,5 +1,5 @@
 """
-Athlete Reusability Project
+Classes Reusability Project
 
 This project demonstrates different ways to reuse classes in Python:
 - Inheritance
