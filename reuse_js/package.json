@@ -9,5 +9,9 @@
   "keywords": [],
   "author": "Dac Linh Giao NGUYEN",
   "license": "MIT",
-  "description": "Classes reusability project in javascript"
+  "description": "Classes reusability project in javascript",
+  "devDependencies": {
+    "@types/jest": "^29.5.12",
+    "jest": "^29.7.0"
+  }
 }
