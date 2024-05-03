@@ -1,4 +1,5 @@
 const {Thrower} = require("../src/thrower");
+const Athlete = require("../src/athlete");
 
 // Mock Athlete
 const MockAthlete = jest.fn().mockImplementation((speciality) => {
@@ -23,5 +24,15 @@ describe("Thrower", () => {
         const consoleSpy = jest.spyOn(console, "log");
         thrower.display();
         expect(consoleSpy).toHaveBeenCalledWith("My name is Ryan Crouser. My speciality is shot put");
+    });
+
+    // Test if athlete is an instance of Athlete
+    // test("athlete property should be an instance of Athlete", () => {
+    //     expect(thrower.athlete).toBeInstanceOf(MockAthlete);
+    // });
+
+    // Test if athlete has mySpeciality method
+    test("athlete property should have mySpeciality method", () => {
+        expect(typeof thrower.athlete.mySpeciality).toBe("function");
     });
 })
