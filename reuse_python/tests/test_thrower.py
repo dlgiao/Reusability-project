@@ -10,12 +10,12 @@ class TestThrower:
 
     @mock.patch('src.athlete.Athlete')
     def setup_method(self, method, mock_athlete):
-        # athlete = MagicMock()
-        # athlete.my_speciality.return_value = "shot put"
+        print(f"Setting up {method}")
         mock_athlete.my_speciality.return_value = "My speciality is shot put."
         self.thrower = Thrower("Ryan", "Crouser", mock_athlete)
 
     def teardown_method(self, method):
+        print(f"Tearing down {method}")
         del self.thrower
 
     def test_display_method(self, capsys):
