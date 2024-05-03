@@ -7,6 +7,8 @@
 const Sprinter = require("./sprinter")
 const Athlete = require("./athlete")
 const {Thrower} = require("./thrower");
+const {DistanceRunner} = require("./distance_runner");
+const {AthleteBase} = require("./athlete_base");
 
 /**
  * Create instances of different types of athletes and display their information.
@@ -23,6 +25,11 @@ function main() {
     const ryan = new Thrower("Ryan", "Crouser", new Athlete("shot put"));
     // Displaying information about the Thrower
     ryan.display();
+
+    // Creating a DistanceRunner instance
+    const eliud = new DistanceRunner("Eliud", "Kipchoge", new AthleteBase("marathon"));
+    // Displaying information about the DistanceRunner
+    eliud.display();
 }
 
 // Call the main function to execute the program
