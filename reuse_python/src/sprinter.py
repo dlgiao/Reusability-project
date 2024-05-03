@@ -58,4 +58,4 @@ class Sprinter(Athlete):
         Returns:
             None
         """
-        print("My name is {} {}, {}".format(self.first_name, self.last_name, super().my_speciality()))
+        print(f"My name is {self.first_name} {self.last_name}, {super().my_speciality()}")
