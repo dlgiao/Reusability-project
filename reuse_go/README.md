@@ -40,6 +40,7 @@ To run the project, follow these steps:
 3. Run the following command:
 
 ```bash
+go mod init kmmania.com/reuse_go
 go run main.go
 ```
 
