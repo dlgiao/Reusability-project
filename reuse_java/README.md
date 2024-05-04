@@ -1,4 +1,4 @@
-# Athlete Reusability Project
+# Classes Reusability Project
 
 This project demonstrates different approaches to reusing classes in Java, including inheritance, composition, and composition with interfaces.
 
@@ -24,22 +24,60 @@ Composition with interfaces allows classes to implement common behavior defined 
 
 ## Project Structure
 
+The project is structured as follows:
+
 - `Athlete`: Defines a base class for an athlete profile.
 - `Sprinter`: Represents a sprinter athlete, utilizing inheritance.
-- `Thrower`: Represents an athlete specializing in throwing events, utilizing composition.
+- `Thrower`: Represents an athlete specializing in throwing, utilizing composition.
 - `AthleteInterface`: Defines an interface for retrieving an athlete's specialty.
-- `AthleteImpl`: Implements the `AthleteInterface`.
+- `AthleteImpl`: Defines a base class implementing the `AthleteInterface`.
 - `DistanceRunner`: Represents an athlete specializing in distance running, utilizing composition with interfaces.
-- `Jumper`: Represents an athlete specializing in jumping events, also utilizing composition with interfaces.
+- `Jumper`: Represents an athlete specializing in jumping, also utilizing composition with interfaces.
 - `Main`: Contains the `main` method to demonstrate the usage of different athlete classes.
 
 ## Usage
 
-To run the project, execute the `Main` class. It will instantiate objects of various athlete types and display their information.
+To run the project, follow these steps:
+
+1. Clone this repository.
+2. Navigate to the root directory of the project.
+3. Run the following command:
 
 ```bash
-java com.kmmania.Main
+mvn clean install
 ```
+
+After successful build, run the Main class:
+
+```bash
+java -jar target/reuse_java-1.0-SNAPSHOT.jar
+```
+
+This will execute the main method in the Main class.
+
+### Running Unit Tests
+
+Explore the comprehensive unit tests included in the project to ensure reliability and robustness. To execute them using Maven, simply run:
+
+```bash
+mvn test
+```
+
+## Building and Running with Docker
+
+The project includes a Dockerfile for containerization. To build an image and run the project within a container, execute the following commands:
+
+```bash
+docker build -t reuse_java .
+docker run -it --rm reuse_java
+```
+
+## Dependencies
+
+Ensure the following dependencies are available:
+
+- Java 8 or higher
+- Apache Maven
 
 ## Contributions
 

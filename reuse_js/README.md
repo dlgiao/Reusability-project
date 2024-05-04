@@ -1,4 +1,4 @@
-# Athlete Reusability Project
+# Classes Reusability Project
 
 This project demonstrates different approaches to reusing classes in JavaScript/Node.js, including inheritance, composition, and composition with interfaces.
 
@@ -28,7 +28,7 @@ Composition with interfaces allows classes to implement common behavior defined 
 - `Sprinter`: Represents a sprinter athlete, utilizing inheritance.
 - `Thrower`: Represents an athlete specializing in throwing events, utilizing composition.
 - `AthleteInterface`: Defines an interface for retrieving an athlete's specialty.
-- `AthleteImpl`: Implements the `AthleteInterface`.
+- `AthleteBase`: Defines a base class implementing the `AthleteInterface`.
 - `DistanceRunner`: Represents an athlete specializing in distance running, utilizing composition with interfaces.
 - `Jumper`: Represents an athlete specializing in jumping events, also utilizing composition with interfaces.
 - `index.js`: Contains the main code to demonstrate the usage of different athlete classes.
@@ -48,11 +48,29 @@ npm install
 ```bash
 npm run start
 ````
-This will execute the main script, demonstrating the usage of different approaches to reusing classes in JavaScript/Node.js.
+
+This will execute the main function in the index.js file.
+
+### Running Unit Tests
+
+Explore the comprehensive unit tests included in the project to ensure reliability and robustness. To execute them using npm, simply run:
+
+```bash
+npm run test
+```
+
+## Building and Running with Docker
+
+The project includes a Dockerfile for containerization. To build an image and run the project within a container, execute the following commands:
+
+```bash
+docker build -t reuse_js .
+docker run -it --rm reuse_js
+```
 
 ## Dependencies
 
-This project requires:
+Ensure the following dependencies are available:
 
 - Node.js
 
