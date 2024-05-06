@@ -1,55 +1,57 @@
 package athlete_interface
 
 import (
+	"github.com/stretchr/testify/assert"
 	"os"
 	"testing"
 )
 
 func TestBaseAthlete_MySpeciality(t *testing.T) {
-	baseAthlete := BaseAthlete{Speciality: "my speciality"}
+	// Given
+	baseAthlete := BaseAthlete{Speciality: "running"}
 
-	// Call the MySpeciality method on the Athlete
+	// When
 	result := baseAthlete.MySpeciality()
 
 	// Check if the result matches the expected value
-	expected := "My speciality is my speciality."
-	if result != expected {
-		t.Errorf("My speciality is my speciality. Expected %s, got %s", expected, result)
-	}
+	expected := "My speciality is running."
+	assert.Equal(t, expected, result, "My speciality is running. Expected %s, got %s", expected, result)
 }
 
 func TestDistanceRunner_Display(t *testing.T) {
+	// Given
 	distanceRunner := DistanceRunner{
 		Firstname: "Eliud",
 		Lastname:  "Kipchoge",
 		Athlete:   BaseAthlete{Speciality: "marathon"},
 	}
 
-	expected := "My name is Eliud Kipchoge. My speciality is marathon.\n"
+	// When
 	output := captureOutput(func() {
 		distanceRunner.Display()
 	})
 
-	if output != expected {
-		t.Errorf("Expected output %s, but got %s", expected, output)
-	}
+	// Then
+	expected := "My name is Eliud Kipchoge. My speciality is marathon.\n"
+	assert.Equal(t, expected, output, "Expected output %s, but got %s", expected, output)
 }
 
 func TestJumper_Display(t *testing.T) {
+	// Given
 	jumper := Jumper{
 		Firstname: "Marco",
 		Lastname:  "Tamberi",
 		Athlete:   BaseAthlete{Speciality: "high jump"},
 	}
 
-	expected := "My name is Marco Tamberi. My speciality is high jump.\n"
+	// When
 	output := captureOutput(func() {
 		jumper.Display()
 	})
 
-	if output != expected {
-		t.Errorf("Expected output %s, but got %s", expected, output)
-	}
+	// Then
+	expected := "My name is Marco Tamberi. My speciality is high jump.\n"
+	assert.Equal(t, expected, output, "Expected output %s, but got %s", expected, output)
 }
 
 // captureOutput captures the output of a function and returns it as a string.
