@@ -19,6 +19,7 @@ func TestAthlete_MySpeciality(t *testing.T) {
 }
 
 func TestSprinter_Display(t *testing.T) {
+	// Given
 	sprinter := Sprinter{
 		Firstname: "Usain",
 		Lastname:  "Bolt",
@@ -27,17 +28,22 @@ func TestSprinter_Display(t *testing.T) {
 		},
 	}
 
-	expected := "My name is Usain Bolt. My speciality is sprinting.\n"
+	// When
 	output := captureOutput(func() {
 		sprinter.Display()
 	})
 
-	if output != expected {
+	// Then
+	expected := "My name is Usain Bolt. My speciality is sprinting.\n"
+	assert.Equal(t, expected, output, "Expected output %s, but got %s", expected, output)
+
+	/*	if output != expected {
 		t.Errorf("Expected output %s, but got %s", expected, output)
-	}
+	}*/
 }
 
 func TestThrower_Display(t *testing.T) {
+	// Given
 	thrower := Thrower{
 		Firstname: "Ryan",
 		Lastname:  "Crouser",
@@ -46,14 +52,18 @@ func TestThrower_Display(t *testing.T) {
 		},
 	}
 
-	expected := "My name is Ryan Crouser. My speciality is shot put.\n"
+	// When
 	output := captureOutput(func() {
 		thrower.Display()
 	})
 
-	if output != expected {
-		t.Errorf("Expected output %s, but got %s", expected, output)
-	}
+	// Then
+	expected := "My name is Ryan Crouser. My speciality is shot put.\n"
+	assert.Equal(t, expected, output, "Expected output %s, but got %s", expected, output)
+
+	//if output != expected {
+	//	t.Errorf("Expected output %s, but got %s", expected, output)
+	//}
 }
 
 // captureOutput captures the output of a function and returns it as a string.
