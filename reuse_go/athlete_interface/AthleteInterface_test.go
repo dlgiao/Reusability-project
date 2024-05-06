@@ -2,7 +2,7 @@ package athlete_interface
 
 import (
 	"github.com/stretchr/testify/assert"
-	"os"
+	"kmmania.com/reuse_go/utils"
 	"testing"
 )
 
@@ -27,7 +27,7 @@ func TestDistanceRunner_Display(t *testing.T) {
 	}
 
 	// When
-	output := captureOutput(func() {
+	output := utils.CaptureOutput(func() {
 		distanceRunner.Display()
 	})
 
@@ -45,37 +45,11 @@ func TestJumper_Display(t *testing.T) {
 	}
 
 	// When
-	output := captureOutput(func() {
+	output := utils.CaptureOutput(func() {
 		jumper.Display()
 	})
 
 	// Then
 	expected := "My name is Marco Tamberi. My speciality is high jump.\n"
 	assert.Equal(t, expected, output, "Expected output %s, but got %s", expected, output)
-}
-
-// captureOutput captures the output of a function and returns it as a string.
-func captureOutput(f func()) string {
-	old := os.Stdout // keep backup of the real stdout
-	r, w, _ := os.Pipe()
-	os.Stdout = w
-
-	outC := make(chan string)
-	go func() {
-		var buf []byte
-		buf = make([]byte, 1024)
-		n, _ := r.Read(buf)
-		outC <- string(buf[:n])
-	}()
-
-	f()
-
-	err := w.Close()
-	if err != nil {
-		return ""
-	}
-	os.Stdout = old // restoring the real stdout
-	out := <-outC
-
-	return out
 }
