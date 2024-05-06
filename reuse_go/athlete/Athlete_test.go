@@ -1,21 +1,21 @@
 package athlete
 
 import (
+	"github.com/stretchr/testify/assert"
 	"os"
 	"testing"
 )
 
 func TestAthlete_MySpeciality(t *testing.T) {
-	athlete := Athlete{Speciality: "my speciality"}
+	// Given
+	athlete := Athlete{Speciality: "running"}
 
-	// Call the MySpeciality method on the Athlete
+	// When
 	result := athlete.MySpeciality()
 
-	// Check if the result matches the expected value
-	expected := "My speciality is my speciality."
-	if result != expected {
-		t.Errorf("My speciality is my speciality. Expected %s, got %s", expected, result)
-	}
+	// Then
+	expected := "My speciality is running."
+	assert.Equal(t, expected, result, "My speciality is running. Expected %s, got %s", expected, result)
 }
 
 func TestSprinter_Display(t *testing.T) {
