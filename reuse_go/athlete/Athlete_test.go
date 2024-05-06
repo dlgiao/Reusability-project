@@ -36,10 +36,6 @@ func TestSprinter_Display(t *testing.T) {
 	// Then
 	expected := "My name is Usain Bolt. My speciality is sprinting.\n"
 	assert.Equal(t, expected, output, "Expected output %s, but got %s", expected, output)
-
-	/*	if output != expected {
-		t.Errorf("Expected output %s, but got %s", expected, output)
-	}*/
 }
 
 func TestThrower_Display(t *testing.T) {
@@ -60,10 +56,6 @@ func TestThrower_Display(t *testing.T) {
 	// Then
 	expected := "My name is Ryan Crouser. My speciality is shot put.\n"
 	assert.Equal(t, expected, output, "Expected output %s, but got %s", expected, output)
-
-	//if output != expected {
-	//	t.Errorf("Expected output %s, but got %s", expected, output)
-	//}
 }
 
 // captureOutput captures the output of a function and returns it as a string.
