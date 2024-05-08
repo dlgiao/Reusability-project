@@ -13,7 +13,7 @@ func TestBaseAthlete_MySpeciality(t *testing.T) {
 	// When
 	result := baseAthlete.MySpeciality()
 
-	// Check if the result matches the expected value
+	// Then
 	expected := "My speciality is running."
 	assert.Equal(t, expected, result, "My speciality is running. Expected %s, got %s", expected, result)
 }
